@@ -1,11 +1,17 @@
+@import "_color.css";
+@import "_vars.css";
+
 body  {
+    min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
     padding: 20px;
+    font-size: var(--font-main);
+    background: var(--background-main);
 }
 .header {
     padding: 15px 20px;
-    background: linear-gradient(180deg, #424445 70%, #bbc1c3);
+    background: linear-gradient(178deg, #424445, #bbc1c3);
     border-radius: 20px;
 }
 .nav {
@@ -43,6 +49,47 @@ body  {
 }
 .menu__link {
     text-decoration: none;
-    color: #ceebec;
     letter-spacing: 2px;
+}
+.main {
+    width: 80%;
+    max-width: 940px;
+    margin: 60px auto 0 auto;
+    margin: 0 auto;
+}
+.main section {
+    font-size: var(--font-main);
+    text-align: justify;
+    margin-bottom: 40px;
+}
+main section h2 {
+    margin: 12px 0;
+    position: relative;
+}
+.main section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 35%;
+    height: 2px;
+    background: #e4390e;
+}
+
+.main section p {
+    margin: 10px 0;
+}
+
+.main section p::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+.main section:nth-child(3),
+.main section:nth-child(4) {
+    display: inline-block;
+    width: calc(50% - 18px);
+    vertical-align: top;
+}
+.main section:nth-child(3) {
+    margin-right: 30px;
 }

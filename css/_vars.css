@@ -1,0 +1,7 @@
+/*------Файл для сохранения переменных------*/
+
+:root {
+    --background-main: linear-gradient(170deg, #430b43, #0b324d);
+    --font-main: 18px;
+    --background-btn: linear-gradient(10deg, #000000, #555555);
+}
