@@ -1,0 +1,48 @@
+body  {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.header {
+    padding: 15px 20px;
+    background: linear-gradient(180deg, #424445 70%, #bbc1c3);
+    border-radius: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+}
+.logo {
+    display: inline-block;
+    width: 15%;
+    min-width: 100px;
+    max-width: 180px;
+    height: auto;
+}
+.logo__img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+.menu {
+    display: inline-block;
+    width: calc(85% - 40px);
+    font-size: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    margin: 0 0;
+}
+.menu__item {
+    display: inline-block;
+    width: 25%;
+    font-size: 22px;
+    text-align: center;
+}
+.menu__link {
+    text-decoration: none;
+    color: #ceebec;
+    letter-spacing: 2px;
+}
